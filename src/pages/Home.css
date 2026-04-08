@@ -136,24 +136,27 @@
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: 4rem 2rem;
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1.5rem;
+  min-height: 300px;
 }
 
 .cta-section h2 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
-  width: 100%;
+  margin: 0;
+  text-align: center;
+  max-width: 100%;
 }
 
 .cta-section p {
   font-size: 1.1rem;
-  margin-bottom: 2rem;
+  margin: 0;
   opacity: 0.95;
-  width: 100%;
+  text-align: center;
+  max-width: 600px;
 }
 
 .cta-button-large {
