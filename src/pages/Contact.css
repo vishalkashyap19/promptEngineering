@@ -1,0 +1,403 @@
+.contact-page {
+  padding-top: 70px;
+}
+
+.page-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 3rem 2rem;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+/* Contact Info */
+.contact-info {
+  padding: 2rem 0;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.contact-info > p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.info-card {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 16px rgba(102, 126, 234, 0.15);
+}
+
+.info-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.info-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.info-card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.info-card p:last-child {
+  margin-bottom: 0;
+}
+
+.info-card a {
+  color: #667eea;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.info-card a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.social-links a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: white;
+  border: 2px solid #667eea;
+  border-radius: 6px;
+  color: #667eea;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  background: #667eea;
+  color: white;
+}
+
+/* Contact Form */
+.contact-form-wrapper {
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form-wrapper h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.required {
+  color: #e74c3c;
+  margin-left: 0.25rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999;
+}
+
+/* Validation States */
+.form-group.field-valid input,
+.form-group.field-valid textarea {
+  border-color: #27ae60;
+  background-color: #f0fdf4;
+}
+
+.form-group.field-error input,
+.form-group.field-error textarea {
+  border-color: #e74c3c;
+  background-color: #ffe6e6;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 0.35rem;
+  display: block;
+}
+
+.success-message {
+  padding: 1rem;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  animation: slideInDown 0.3s ease-out;
+}
+
+/* Submit Button */
+.submit-button {
+  padding: 0.85rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+.submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-page {
+    padding-top: 60px;
+  }
+
+  .page-header {
+    padding: 3rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .contact-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-info h2 {
+    font-size: 1.6rem;
+  }
+
+  .contact-form-wrapper {
+    padding: 1.5rem;
+  }
+
+  .contact-form-wrapper h2 {
+    font-size: 1.4rem;
+  }
+
+  .info-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .info-card h3 {
+    font-size: 1rem;
+  }
+
+  .info-card p {
+    font-size: 0.85rem;
+  }
+
+  .info-icon {
+    font-size: 2rem;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+  }
+
+  .social-links a {
+    flex: 1;
+    min-width: 80px;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header {
+    padding: 2rem 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .contact-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .contact-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact-info > p {
+    font-size: 0.9rem;
+  }
+
+  .contact-form-wrapper {
+    padding: 1rem;
+  }
+
+  .contact-form-wrapper h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-form {
+    gap: 1rem;
+  }
+
+  .info-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .info-card {
+    padding: 1.25rem;
+  }
+
+  .info-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .info-card p {
+    font-size: 0.8rem;
+  }
+
+  .info-icon {
+    font-size: 1.8rem;
+  }
+
+  .social-links {
+    gap: 0.5rem;
+  }
+
+  .social-links a {
+    padding: 0.35rem 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.65rem 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .submit-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
