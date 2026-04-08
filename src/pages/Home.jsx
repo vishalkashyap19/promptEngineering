@@ -79,9 +79,11 @@ function Home() {
 
       {/* Call to Action Section */}
       <section className="cta-section" aria-labelledby="cta-title">
-        <h2 id="cta-title">Ready to Get Started?</h2>
-        <p>Contact us today to discuss your project and how we can help bring your vision to life.</p>
-        <a href="/contact" className="cta-button cta-button-large">Contact Us Now</a>
+        <div className="cta-content">
+          <h2 id="cta-title">Ready to Get Started?</h2>
+          <p>Contact us today to discuss your project and how we can help bring your vision to life.</p>
+          <a href="/contact" className="cta-button cta-button-large">Contact Us Now</a>
+        </div>
       </section>
     </div>
   )
