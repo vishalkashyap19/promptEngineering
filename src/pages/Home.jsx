@@ -1,6 +1,52 @@
+import { Link } from 'react-router-dom'
 import './Home.css'
 
 function Home() {
+  const features = [
+    {
+      id: 1,
+      icon: '🎨',
+      title: 'Beautiful Design',
+      description: 'Modern and clean design that captivates your audience and creates lasting impressions.',
+      path: '/feature/design'
+    },
+    {
+      id: 2,
+      icon: '📱',
+      title: 'Responsive Layout',
+      description: 'Works seamlessly on all devices - mobile, tablet, and desktop with perfect alignment.',
+      path: '/feature/responsive'
+    },
+    {
+      id: 3,
+      icon: '⚡',
+      title: 'Fast Performance',
+      description: 'Optimized for speed and user experience with minimal load times and smooth interactions.',
+      path: '/feature/performance'
+    },
+    {
+      id: 4,
+      icon: '🔒',
+      title: 'Secure & Reliable',
+      description: 'Built with security best practices and modern technology stack for reliability.',
+      path: '/feature/security'
+    },
+    {
+      id: 5,
+      icon: '🚀',
+      title: 'Scalable Solution',
+      description: 'Grows with your business needs with flexible architecture and future-proof design.',
+      path: '/feature/scalability'
+    },
+    {
+      id: 6,
+      icon: '💡',
+      title: 'Innovation First',
+      description: 'Always using the latest technologies and best practices in web development.',
+      path: '/feature/innovation'
+    }
+  ]
+
   return (
     <div className="home-page">
       {/* Hero Section */}
@@ -17,36 +63,16 @@ function Home() {
         <div className="features-container">
           <h2 id="features-title">Why Choose Us?</h2>
           <div className="features-grid">
-            <div className="feature-card">
-              <div className="feature-icon">🎨</div>
-              <h3>Beautiful Design</h3>
-              <p>Modern and clean design that captivates your audience and creates lasting impressions.</p>
-            </div>
-            <div className="feature-card">
-              <div className="feature-icon">📱</div>
-              <h3>Responsive Layout</h3>
-              <p>Works seamlessly on all devices - mobile, tablet, and desktop with perfect alignment.</p>
-            </div>
-            <div className="feature-card">
-              <div className="feature-icon">⚡</div>
-              <h3>Fast Performance</h3>
-              <p>Optimized for speed and user experience with minimal load times and smooth interactions.</p>
-            </div>
-            <div className="feature-card">
-              <div className="feature-icon">🔒</div>
-              <h3>Secure & Reliable</h3>
-              <p>Built with security best practices and modern technology stack for reliability.</p>
-            </div>
-            <div className="feature-card">
-              <div className="feature-icon">🚀</div>
-              <h3>Scalable Solution</h3>
-              <p>Grows with your business needs with flexible architecture and future-proof design.</p>
-            </div>
-            <div className="feature-card">
-              <div className="feature-icon">💡</div>
-              <h3>Innovation First</h3>
-              <p>Always using the latest technologies and best practices in web development.</p>
-            </div>
+            {features.map((feature) => (
+              <Link key={feature.id} to={feature.path} className="feature-card-link">
+                <div className="feature-card">
+                  <div className="feature-icon">{feature.icon}</div>
+                  <h3>{feature.title}</h3>
+                  <p>{feature.description}</p>
+                  <span className="feature-cta">Learn More →</span>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

@@ -68,6 +68,13 @@
   gap: 2rem;
 }
 
+.feature-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+
 .feature-card {
   padding: 2rem;
   background: #f8f9fa;
@@ -75,6 +82,9 @@
   text-align: center;
   transition: all 0.3s ease;
   border: 2px solid transparent;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .feature-card:hover {
@@ -87,6 +97,11 @@
   font-size: 3rem;
   margin-bottom: 1rem;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  transform: scale(1.1);
 }
 
 .feature-card h3 {
@@ -98,6 +113,21 @@
 .feature-card p {
   color: #666;
   line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.feature-cta {
+  display: inline-block;
+  color: #667eea;
+  font-weight: 600;
+  margin-top: auto;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-cta {
+  color: #764ba2;
+}
   font-size: 0.95rem;
 }
 
