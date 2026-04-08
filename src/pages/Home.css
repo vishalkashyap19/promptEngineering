@@ -137,17 +137,23 @@
   color: white;
   padding: 4rem 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .cta-section h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .cta-section p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
   opacity: 0.95;
+  width: 100%;
 }
 
 .cta-button-large {
