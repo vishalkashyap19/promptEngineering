@@ -60,33 +60,38 @@
   padding-bottom: 0.3rem;
 }
 
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  background: transparent;
-  padding: 0.5rem;
+.navbar-whatsapp {
+  margin-left: auto;
 }
 
-.hamburger-line {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 5px 0;
-  transition: 0.3s;
-  border-radius: 2px;
+.whatsapp-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #25d366;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
 }
 
-.hamburger.active .hamburger-line:nth-child(1) {
-  transform: rotate(-45deg) translate(-8px, 8px);
+.whatsapp-link:hover {
+  background-color: #1ebd58;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.5);
 }
 
-.hamburger.active .hamburger-line:nth-child(2) {
-  opacity: 0;
+.whatsapp-link:active {
+  transform: translateY(0);
 }
 
-.hamburger.active .hamburger-line:nth-child(3) {
-  transform: rotate(45deg) translate(-7px, -7px);
+.whatsapp-icon {
+  font-size: 1.2rem;
+  display: inline-block;
 }
 
 /* Responsive Design */
@@ -136,6 +141,23 @@
   .navbar-logo {
     font-size: 1.3rem;
   }
+
+  .navbar-whatsapp {
+    margin-left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-item:last-child {
+    border-bottom: none;
+  }
+
+  .whatsapp-link {
+    margin: 1rem 2rem;
+    display: flex;
+    width: calc(100% - 4rem);
+    justify-content: center;
+    box-sizing: border-box;
+  }
 }
 
 @media (max-width: 480px) {
@@ -150,5 +172,16 @@
 
   .logo-icon {
     font-size: 1.4rem;
+  }
+
+  .whatsapp-link {
+    margin: 0.75rem 1rem;
+    width: calc(100% - 2rem);
+    padding: 0.6rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .whatsapp-icon {
+    font-size: 1rem;
   }
 }

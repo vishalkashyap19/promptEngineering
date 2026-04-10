@@ -63,6 +63,19 @@ function Navbar() {
               </Link>
             </li>
           ))}
+          <li className="navbar-item navbar-whatsapp">
+            <a
+              href="https://wa.me/917277809626?text=Hi%20there!%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="whatsapp-link"
+              aria-label="Chat with us on WhatsApp"
+              title="Chat with us on WhatsApp"
+            >
+              <span className="whatsapp-icon">💬</span>
+              WhatsApp
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
