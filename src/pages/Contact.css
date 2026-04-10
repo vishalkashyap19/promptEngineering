@@ -219,6 +219,17 @@
   animation: slideInDown 0.3s ease-out;
 }
 
+.error-message-box {
+  padding: 1rem;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  animation: slideInDown 0.3s ease-out;
+}
+
 /* Submit Button */
 .submit-button {
   padding: 0.85rem 2rem;

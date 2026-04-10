@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
+import { db } from '../config/firebase'
 import './Contact.css'
 
 function Contact() {
@@ -12,6 +14,8 @@ function Contact() {
   const [errors, setErrors] = useState({})
   const [submitted, setSubmitted] = useState(false)
   const [touched, setTouched] = useState({})
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState('')
 
   // Email validation regex
   const validateEmail = (email) => {
@@ -91,26 +95,46 @@ function Contact() {
   }
 
   // Handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
 
     const newErrors = validateForm()
 
     if (Object.keys(newErrors).length === 0) {
-      // Form is valid - show success message
-      setSubmitted(true)
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        message: ''
-      })
-      setTouched({})
+      setIsSubmitting(true)
+      setSubmitError('')
 
-      // Hide success message after 5 seconds
-      setTimeout(() => {
-        setSubmitted(false)
-      }, 5000)
+      try {
+        // Save form data to Firestore
+        await addDoc(collection(db, 'contact_forms'), {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          timestamp: serverTimestamp(),
+          status: 'new'
+        })
+
+        // Form is valid - show success message
+        setSubmitted(true)
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: ''
+        })
+        setTouched({})
+
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+          setSubmitted(false)
+        }, 5000)
+      } catch (error) {
+        console.error('Error saving form data:', error)
+        setSubmitError('Failed to send message. Please try again.')
+      } finally {
+        setIsSubmitting(false)
+      }
     } else {
       // Form has errors - mark all fields as touched
       setErrors(newErrors)
@@ -180,6 +204,12 @@ function Contact() {
             {submitted && (
               <div className="success-message" role="alert">
                 ✓ Message sent successfully! We'll get back to you soon.
+              </div>
+            )}
+
+            {submitError && (
+              <div className="error-message-box" role="alert">
+                ✗ {submitError}
               </div>
             )}
 
@@ -268,8 +298,13 @@ function Contact() {
                 )}
               </div>
 
-              <button type="submit" className="submit-button">
-                Send Message
+              <button 
+                type="submit" 
+                className="submit-button"
+                disabled={isSubmitting}
+                aria-busy={isSubmitting}
+              >
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </div>
