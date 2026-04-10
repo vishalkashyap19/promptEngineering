@@ -5,6 +5,7 @@ function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     message: ''
   })
 
@@ -16,6 +17,12 @@ function Contact() {
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     return emailRegex.test(email)
+  }
+
+  // Phone validation regex
+  const validatePhone = (phone) => {
+    const phoneRegex = /^[\d\s\-\+\(\)]{10,}$/
+    return phoneRegex.test(phone.replace(/\s/g, ''))
   }
 
   // Validate form
@@ -32,6 +39,12 @@ function Contact() {
       newErrors.email = 'Email is required'
     } else if (!validateEmail(formData.email)) {
       newErrors.email = 'Please enter a valid email address'
+    }
+
+    if (!formData.phone.trim()) {
+      newErrors.phone = 'Phone number is required'
+    } else if (!validatePhone(formData.phone)) {
+      newErrors.phone = 'Please enter a valid phone number (at least 10 digits)'
     }
 
     if (!formData.message.trim()) {
@@ -89,6 +102,7 @@ function Contact() {
       setFormData({
         name: '',
         email: '',
+        phone: '',
         message: ''
       })
       setTouched({})
@@ -103,6 +117,7 @@ function Contact() {
       setTouched({
         name: true,
         email: true,
+        phone: true,
         message: true
       })
     }
@@ -208,6 +223,27 @@ function Contact() {
                 />
                 {errors.email && (
                   <span id="email-error" className="error-message" role="alert">{errors.email}</span>
+                )}
+              </div>
+
+              <div className={`form-group ${getFieldClass('phone')}`}>
+                <label htmlFor="phone">
+                  Phone Number <span className="required" aria-label="required">*</span>
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  placeholder="+1 (234) 567-8900"
+                  aria-required="true"
+                  aria-invalid={!!errors.phone}
+                  aria-describedby={errors.phone ? 'phone-error' : undefined}
+                />
+                {errors.phone && (
+                  <span id="phone-error" className="error-message" role="alert">{errors.phone}</span>
                 )}
               </div>
 
