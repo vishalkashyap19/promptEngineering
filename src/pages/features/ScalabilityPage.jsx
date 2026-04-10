@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Feature.css'
 
 function ScalabilityPage() {
@@ -106,7 +107,10 @@ function ScalabilityPage() {
           <div className="cta-feature">
             <h2>Plan Your Scalable Future</h2>
             <p>Let's design a system that grows with your ambitions</p>
-            <a href="/contact" className="cta-button">Discuss Scalability</a>
+            <div className="feature-page-buttons">
+              <Link to="/contact" className="cta-button">Enquiry</Link>
+              <Link to="/pricing" className="cta-button cta-button-secondary">View Pricing</Link>
+            </div>
           </div>
         </div>
       </section>

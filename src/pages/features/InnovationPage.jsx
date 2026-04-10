@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Feature.css'
 
 function InnovationPage() {
@@ -125,7 +126,10 @@ function InnovationPage() {
           <div className="cta-feature">
             <h2>innovate With Us</h2>
             <p>Let's build something amazing with the latest technologies</p>
-            <a href="/contact" className="cta-button">Start Innovating</a>
+            <div className="feature-page-buttons">
+              <Link to="/contact" className="cta-button">Enquiry</Link>
+              <Link to="/pricing" className="cta-button cta-button-secondary">View Pricing</Link>
+            </div>
           </div>
         </div>
       </section>

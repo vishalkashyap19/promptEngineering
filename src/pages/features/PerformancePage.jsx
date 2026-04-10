@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Feature.css'
 
 function PerformancePage() {
@@ -107,7 +108,10 @@ function PerformancePage() {
           <div className="cta-feature">
             <h2>Let's Speed Up Your Website</h2>
             <p>Get a performance audit and optimization plan for your site</p>
-            <a href="/contact" className="cta-button">Request Performance Audit</a>
+            <div className="feature-page-buttons">
+              <Link to="/contact" className="cta-button">Enquiry</Link>
+              <Link to="/pricing" className="cta-button cta-button-secondary">View Pricing</Link>
+            </div>
           </div>
         </div>
       </section>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Feature.css'
 
 function ResponsiveLayoutPage() {
@@ -97,7 +98,11 @@ function ResponsiveLayoutPage() {
           <div className="cta-feature">
             <h2>Get a Responsive Website Today</h2>
             <p>Reach your audience on any device with a beautifully responsive design</p>
-            <a href="/contact" className="cta-button">Build Responsive Site</a>
+            <div className="feature-page-buttons">
+              <Link to="/contact" className="cta-button">Enquiry</Link>
+              <Link to="/pricing" className="cta-button cta-button-secondary">View Pricing</Link>
+            </div>
+          </div>
           </div>
         </div>
       </section>

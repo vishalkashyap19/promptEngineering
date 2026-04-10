@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
+import Pricing from './pages/Pricing'
 import DesignPage from './pages/features/DesignPage'
 import ResponsiveLayoutPage from './pages/features/ResponsiveLayoutPage'
 import PerformancePage from './pages/features/PerformancePage'
@@ -24,6 +25,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/pricing" element={<Pricing />} />
             <Route path="/feature/design" element={<DesignPage />} />
             <Route path="/feature/responsive" element={<ResponsiveLayoutPage />} />
             <Route path="/feature/performance" element={<PerformancePage />} />

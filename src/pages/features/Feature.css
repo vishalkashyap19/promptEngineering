@@ -448,6 +448,13 @@
   text-align: center;
 }
 
+.feature-page-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .cta-button {
   display: inline-block;
   padding: 0.75rem 2rem;
@@ -457,16 +464,30 @@
   font-weight: 600;
   transition: all 0.3s ease;
   text-decoration: none;
+  text-align: center;
+  border: 2px solid #ffd700;
 }
 
 .cta-button:hover {
   background-color: #ffed4e;
+  border-color: #ffed4e;
   transform: translateY(-2px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .cta-button:active {
   transform: translateY(0);
+}
+
+.cta-button-secondary {
+  background-color: transparent;
+  color: #ffd700;
+  border-color: #ffd700;
+}
+
+.cta-button-secondary:hover {
+  background-color: #ffd700;
+  color: #333;
 }
 
 /* Animations */
@@ -550,6 +571,15 @@
 
   .cta-feature h2 {
     font-size: 1.6rem;
+  }
+
+  .feature-page-buttons {
+    gap: 0.75rem;
+  }
+
+  .cta-button {
+    padding: 0.6rem 1.25rem;
+    font-size: 0.95rem;
   }
 }
 
@@ -639,8 +669,14 @@
     font-size: 0.95rem;
   }
 
+  .feature-page-buttons {
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+
   .cta-button {
-    padding: 0.6rem 1.5rem;
-    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+    width: 100%;
   }
 }

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Feature.css'
 
 function DesignPage() {
@@ -93,7 +94,10 @@ function DesignPage() {
           <div className="cta-feature">
             <h2>Ready to Transform Your Design?</h2>
             <p>Let's create a beautiful, user-centered design that elevates your brand</p>
-            <a href="/contact" className="cta-button">Start Your Design Project</a>
+            <div className="feature-page-buttons">
+              <Link to="/contact" className="cta-button">Enquiry</Link>
+              <Link to="/pricing" className="cta-button cta-button-secondary">View Pricing</Link>
+            </div>
           </div>
         </div>
       </section>

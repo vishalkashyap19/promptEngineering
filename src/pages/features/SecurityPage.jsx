@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Feature.css'
 
 function SecurityPage() {
@@ -94,7 +95,10 @@ function SecurityPage() {
           <div className="cta-feature">
             <h2>Secure Your Website Today</h2>
             <p>Get a comprehensive security assessment and implementation plan</p>
-            <a href="/contact" className="cta-button">Request Security Review</a>
+            <div className="feature-page-buttons">
+              <Link to="/contact" className="cta-button">Enquiry</Link>
+              <Link to="/pricing" className="cta-button cta-button-secondary">View Pricing</Link>
+            </div>
           </div>
         </div>
       </section>
