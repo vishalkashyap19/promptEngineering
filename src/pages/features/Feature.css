@@ -480,14 +480,15 @@
 }
 
 .cta-button-secondary {
-  background-color: transparent;
-  color: #ffd700;
+  background-color: #fff9e6;
+  color: #333;
   border-color: #ffd700;
 }
 
 .cta-button-secondary:hover {
   background-color: #ffd700;
   color: #333;
+  border-color: #ffd700;
 }
 
 /* Animations */

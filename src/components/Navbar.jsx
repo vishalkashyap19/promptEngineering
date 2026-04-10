@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import whatsappIcon from '../../whatsapp.png'
 import './Navbar.css'
 
 function Navbar() {
@@ -72,7 +73,7 @@ function Navbar() {
               aria-label="Chat with us on WhatsApp"
               title="Chat with us on WhatsApp"
             >
-              <span className="whatsapp-icon">💬</span>
+              <img src={whatsappIcon} alt="WhatsApp" className="whatsapp-icon" />
               WhatsApp
             </a>
           </li>
