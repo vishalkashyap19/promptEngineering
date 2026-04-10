@@ -111,8 +111,7 @@ function Contact() {
           email: formData.email,
           phone: formData.phone,
           message: formData.message,
-          timestamp: serverTimestamp(),
-          status: 'new'
+          timestamp: serverTimestamp()
         })
 
         // Form is valid - show success message
