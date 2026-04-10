@@ -64,18 +64,14 @@ function Home() {
           <h2 id="features-title">Why Choose Us?</h2>
           <div className="features-grid">
             {features.map((feature) => (
-              <div key={feature.id} className="feature-card-link">
-                <Link to={feature.path} className="feature-card">
+              <Link key={feature.id} to={feature.path} className="feature-card-link">
+                <div className="feature-card">
                   <div className="feature-icon">{feature.icon}</div>
                   <h3>{feature.title}</h3>
                   <p>{feature.description}</p>
                   <span className="feature-cta">Learn More →</span>
-                </Link>
-                <div className="feature-card-buttons">
-                  <Link to="/contact" className="btn btn-enquiry">Enquiry</Link>
-                  <Link to="/pricing" className="btn btn-pricing">Pricing</Link>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
