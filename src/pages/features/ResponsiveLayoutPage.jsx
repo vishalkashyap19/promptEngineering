@@ -103,7 +103,6 @@ function ResponsiveLayoutPage() {
               <Link to="/pricing" className="cta-button cta-button-secondary">View Pricing</Link>
             </div>
           </div>
-          </div>
         </div>
       </section>
     </div>
