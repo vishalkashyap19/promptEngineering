@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import whatsappIcon from '../../whatsapp.png'
+import DarkModeToggle from './DarkModeToggle'
 import './Navbar.css'
 
 function Navbar() {
@@ -76,6 +77,9 @@ function Navbar() {
               <img src={whatsappIcon} alt="WhatsApp" className="whatsapp-icon" />
               WhatsApp
             </a>
+          </li>
+          <li className="navbar-item navbar-dark-mode">
+            <DarkModeToggle />
           </li>
         </ul>
       </div>

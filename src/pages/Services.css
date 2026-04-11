@@ -366,3 +366,66 @@
     font-size: 0.95rem;
   }
 }
+
+/* Dark Mode Styles */
+:root[data-theme="dark"] .services-page {
+  background: #1a1a1a;
+}
+
+:root[data-theme="dark"] .services-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+}
+
+:root[data-theme="dark"] .services-header h1 {
+  color: #ffffff;
+}
+
+:root[data-theme="dark"] .services-section {
+  background: transparent;
+}
+
+:root[data-theme="dark"] .services-section h2 {
+  color: #e0e0e0;
+}
+
+:root[data-theme="dark"] .service-card {
+  background: #2d2d2d;
+  border-color: #404040;
+}
+
+:root[data-theme="dark"] .service-card h3 {
+  color: #e0e0e0;
+}
+
+:root[data-theme="dark"] .service-card p {
+  color: #b0b0b0;
+}
+
+:root[data-theme="dark"] .process-step {
+  background: #2d2d2d;
+  border-color: #404040;
+}
+
+:root[data-theme="dark"] .step-number {
+  background: #667eea;
+  color: #ffffff;
+  border-color: #667eea;
+}
+
+:root[data-theme="dark"] .process-step h3 {
+  color: #e0e0e0;
+}
+
+:root[data-theme="dark"] .process-step p {
+  color: #b0b0b0;
+}
+
+:root[data-theme="dark"] .call-to-action {
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+:root[data-theme="dark"] .call-to-action h2,
+:root[data-theme="dark"] .call-to-action p {
+  color: #e0e0e0;
+}

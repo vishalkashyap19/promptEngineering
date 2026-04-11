@@ -365,3 +365,69 @@
     font-size: 0.9rem;
   }
 }
+
+/* Dark Mode Styles */
+:root[data-theme="dark"] .pricing-page {
+  background: #1a1a1a;
+}
+
+:root[data-theme="dark"] .pricing-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+}
+
+:root[data-theme="dark"] .pricing-header h1 {
+  color: #ffffff;
+}
+
+:root[data-theme="dark"] .pricing-grid {
+  background: transparent;
+}
+
+:root[data-theme="dark"] .pricing-card {
+  background: #2d2d2d;
+  border-color: #404040;
+}
+
+:root[data-theme="dark"] .pricing-card h3 {
+  color: #e0e0e0;
+}
+
+:root[data-theme="dark"] .pricing-card p {
+  color: #b0b0b0;
+}
+
+:root[data-theme="dark"] .pricing-card.featured {
+  border-color: #667eea;
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+}
+
+:root[data-theme="dark"] .price {
+  color: #667eea;
+}
+
+:root[data-theme="dark"] .features-list li {
+  color: #b0b0b0;
+}
+
+:root[data-theme="dark"] .faq-item {
+  background: #2d2d2d;
+  border-color: #404040;
+}
+
+:root[data-theme="dark"] .faq-item h3 {
+  color: #e0e0e0;
+}
+
+:root[data-theme="dark"] .faq-item p {
+  color: #b0b0b0;
+}
+
+:root[data-theme="dark"] .cta-feature {
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+:root[data-theme="dark"] .cta-feature h2,
+:root[data-theme="dark"] .cta-feature p {
+  color: #e0e0e0;
+}

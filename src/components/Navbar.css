@@ -121,6 +121,10 @@
   object-fit: contain;
 }
 
+.navbar-dark-mode {
+  margin-left: 0.5rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .navbar-container {
@@ -211,4 +215,17 @@
   .whatsapp-icon {
     font-size: 1rem;
   }
+}
+
+/* Dark Mode Styles */
+:root[data-theme="dark"] .navbar {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+}
+
+:root[data-theme="dark"] .dark-mode-toggle {
+  color: white;
+}
+
+:root[data-theme="dark"] .dark-mode-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }

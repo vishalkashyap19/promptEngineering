@@ -250,3 +250,62 @@
     font-size: 0.8rem;
   }
 }
+
+/* Dark Mode Styles */
+:root[data-theme="dark"] .about-page {
+  background: #1a1a1a;
+}
+
+:root[data-theme="dark"] .about-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+}
+
+:root[data-theme="dark"] .about-header h1 {
+  color: #ffffff;
+}
+
+:root[data-theme="dark"] .values-grid {
+  background: transparent;
+}
+
+:root[data-theme="dark"] .value-card {
+  background: #2d2d2d;
+  border-color: #404040;
+}
+
+:root[data-theme="dark"] .value-card h3 {
+  color: #e0e0e0;
+}
+
+:root[data-theme="dark"] .value-card p {
+  color: #b0b0b0;
+}
+
+:root[data-theme="dark"] .about-section h2 {
+  color: #e0e0e0;
+}
+
+:root[data-theme="dark"] .about-section p {
+  color: #b0b0b0;
+}
+
+:root[data-theme="dark"] .stats-section {
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+}
+
+:root[data-theme="dark"] .stats-section h2 {
+  color: #e0e0e0;
+}
+
+:root[data-theme="dark"] .stat-card {
+  background: #2d2d2d;
+  border-color: #404040;
+}
+
+:root[data-theme="dark"] .stat-card h3 {
+  color: #667eea;
+}
+
+:root[data-theme="dark"] .stat-card p {
+  color: #b0b0b0;
+}
