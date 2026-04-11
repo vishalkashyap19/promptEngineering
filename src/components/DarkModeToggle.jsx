@@ -29,16 +29,17 @@ function DarkModeToggle() {
   }
 
   return (
-    <button
-      className="dark-mode-toggle"
-      onClick={toggleDarkMode}
-      aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
-      title={isDarkMode ? 'Light Mode' : 'Dark Mode'}
-    >
-      <span className="toggle-icon">
-        {isDarkMode ? '☀️' : '🌙'}
-      </span>
-    </button>
+    <div className="dark-mode-toggle-wrapper">
+      <label className="toggle-switch">
+        <input
+          type="checkbox"
+          checked={isDarkMode}
+          onChange={toggleDarkMode}
+          aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+        />
+        <span className="slider"></span>
+      </label>
+    </div>
   )
 }
 
