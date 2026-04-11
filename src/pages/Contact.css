@@ -206,10 +206,10 @@
 }
 
 .whatsapp-logo {
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  object-fit: contain;
   transition: transform 0.3s ease;
 }
 
@@ -228,9 +228,9 @@
 .contact-form-wrapper {
   padding: 2.5rem;
   background: white;
-  border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(102, 126, 234, 0.1);
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(102, 126, 234, 0.1);
   position: relative;
   overflow: hidden;
 }
@@ -241,15 +241,16 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 4px;
   background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
 }
 
 .contact-form-wrapper h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #333;
-  margin-bottom: 2rem;
-  font-weight: 800;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .contact-form {
