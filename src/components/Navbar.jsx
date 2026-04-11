@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import whatsappIcon from '../../whatsapp.png'
 import DarkModeToggle from './DarkModeToggle'
 import './Navbar.css'
 
@@ -65,19 +64,6 @@ function Navbar() {
               </Link>
             </li>
           ))}
-          <li className="navbar-item navbar-whatsapp">
-            <a
-              href="https://wa.me/917277809626?text=Hi%20there!%20I%20would%20like%20to%20know%20more%20about%20your%20services."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="whatsapp-link"
-              aria-label="Chat with us on WhatsApp"
-              title="Chat with us on WhatsApp"
-            >
-              <img src={whatsappIcon} alt="WhatsApp" className="whatsapp-icon" />
-              WhatsApp
-            </a>
-          </li>
           <li className="navbar-item navbar-dark-mode">
             <DarkModeToggle />
           </li>
