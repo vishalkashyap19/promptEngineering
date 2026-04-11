@@ -436,6 +436,22 @@
 }
 
 /* Dark Mode Styles */
+:root[data-theme="dark"] .hero {
+  background: linear-gradient(135deg, #1a1a1a 0%, #252525 50%, #1f1f1f 100%);
+  color: white;
+}
+
+:root[data-theme="dark"] .hero-content h1 {
+  color: #ffffff;
+  font-weight: 800;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+:root[data-theme="dark"] .hero-content p {
+  color: #e0e0e0;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
 :root[data-theme="dark"] .features {
   background: linear-gradient(180deg, #252525 0%, #1a1a1a 100%);
 }
@@ -473,4 +489,14 @@
 :root[data-theme="dark"] .cta-section h2,
 :root[data-theme="dark"] .cta-section p {
   color: #e0e0e0;
+}
+
+:root[data-theme="dark"] .cta-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+:root[data-theme="dark"] .cta-button:hover {
+  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
 }
