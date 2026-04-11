@@ -187,9 +187,9 @@ function Contact() {
                 <div className="info-icon">💬</div>
                 <h3>Social Media</h3>
                 <div className="social-links">
-                  <a href="#twitter" title="Follow us on Twitter" aria-label="Twitter">Twitter</a>
-                  <a href="#linkedin" title="Connect on LinkedIn" aria-label="LinkedIn">LinkedIn</a>
-                  <a href="#facebook" title="Like us on Facebook" aria-label="Facebook">Facebook</a>
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" title="Follow us on Twitter" aria-label="Twitter">Twitter</a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="Connect on LinkedIn" aria-label="LinkedIn">LinkedIn</a>
+                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" title="Like us on Facebook" aria-label="Facebook">Facebook</a>
                 </div>
               </div>
 
