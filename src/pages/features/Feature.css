@@ -789,13 +789,36 @@
 }
 
 :root[data-theme="dark"] .cta-feature {
-  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
-  border: 1px solid rgba(102, 126, 234, 0.2);
+  background: linear-gradient(135deg, #2d2d2d 0%, #3a3a3a 100%);
+  border: 1px solid rgba(102, 126, 234, 0.3);
 }
 
 :root[data-theme="dark"] .cta-feature h2,
 :root[data-theme="dark"] .cta-feature p {
-  color: #e0e0e0;
+  color: #ffffff;
+}
+
+:root[data-theme="dark"] .cta-button {
+  background-color: #ffd700;
+  color: #333;
+  border-color: #ffd700;
+}
+
+:root[data-theme="dark"] .cta-button:hover {
+  background-color: #ffed4e;
+  border-color: #ffed4e;
+}
+
+:root[data-theme="dark"] .cta-button-secondary {
+  background-color: #fff9e6;
+  color: #333;
+  border-color: #ffd700;
+}
+
+:root[data-theme="dark"] .cta-button-secondary:hover {
+  background-color: #ffd700;
+  color: #333;
+  border-color: #ffd700;
 }
 
 :root[data-theme="dark"] .stats-feature {
