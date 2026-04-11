@@ -162,9 +162,6 @@ function Contact() {
       <section className="contact-section" aria-label="Contact information and form">
         <div className="contact-container">
           <div className="contact-info">
-            <h2>Get In Touch</h2>
-            <p>Have a question or want to discuss your project? We're here to help!</p>
-
             <div className="info-cards">
               <div className="info-card">
                 <div className="info-icon">📍</div>
