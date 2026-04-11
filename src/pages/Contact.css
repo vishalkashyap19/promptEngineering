@@ -190,7 +190,9 @@
 }
 
 .whatsapp-contact-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
   padding: 0.6rem 1.2rem;
   background: #25d366;
   border: 2px solid #25d366;
@@ -201,6 +203,18 @@
   transition: all 0.3s ease;
   text-decoration: none;
   margin-top: 0.75rem;
+}
+
+.whatsapp-logo {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-contact-link:hover .whatsapp-logo {
+  transform: scale(1.2) rotate(10deg);
 }
 
 .whatsapp-contact-link:hover {

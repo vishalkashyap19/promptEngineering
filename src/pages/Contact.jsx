@@ -196,10 +196,10 @@ function Contact() {
               </div>
 
               <div className="info-card">
-                <div className="info-icon">💚</div>
+                <div className="info-icon">�</div>
                 <h3>WhatsApp</h3>
                 <p>Chat with us directly on WhatsApp</p>
-                <a href="https://wa.me/917277809626?text=Hi%20there!%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener noreferrer" className="whatsapp-contact-link" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">Start Chat</a>
+                <a href="https://wa.me/917277809626?text=Hi%20there!%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener noreferrer" className="whatsapp-contact-link" title="Chat on WhatsApp" aria-label="Chat on WhatsApp"><span className="whatsapp-logo">📱</span> Start Chat</a>
               </div>
             </div>
           </div>
