@@ -369,6 +369,28 @@
 /* Dark Mode Styles */
 :root[data-theme="dark"] .pricing-page {
   background: #1a1a1a;
+  color: #e0e0e0;
+}
+
+:root[data-theme="dark"] .page-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+}
+
+:root[data-theme="dark"] .page-header h1,
+:root[data-theme="dark"] .pricing-header h1 {
+  color: #ffffff;
+}
+
+:root[data-theme="dark"] .pricing-section {
+  background: #1a1a1a;
+}
+
+:root[data-theme="dark"] .pricing-section h2 {
+  color: #e0e0e0;
+}
+
+:root[data-theme="dark"] .pricing-section p {
+  color: #b0b0b0;
 }
 
 :root[data-theme="dark"] .pricing-header {

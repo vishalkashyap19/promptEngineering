@@ -529,6 +529,27 @@
   color: #ffffff;
 }
 
+:root[data-theme="dark"] .contact-page {
+  background: #1a1a1a;
+  color: #e0e0e0;
+}
+
+:root[data-theme="dark"] .page-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+}
+
+:root[data-theme="dark"] .page-header h1 {
+  color: #ffffff;
+}
+
+:root[data-theme="dark"] .page-header p {
+  color: #ffffff;
+}
+
+:root[data-theme="dark"] .contact-section {
+  background: #1a1a1a;
+}
+
 :root[data-theme="dark"] .contact-info h2 {
   color: #e0e0e0;
 }

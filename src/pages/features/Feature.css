@@ -685,6 +685,7 @@
 /* Dark Mode Styles */
 :root[data-theme="dark"] .feature-page {
   background: #1a1a1a;
+  color: #e0e0e0;
 }
 
 :root[data-theme="dark"] .feature-header {
@@ -695,7 +696,27 @@
   color: #ffffff;
 }
 
+:root[data-theme="dark"] .feature-header p {
+  color: #ffffff;
+}
+
 :root[data-theme="dark"] .feature-description {
+  color: #b0b0b0;
+}
+
+:root[data-theme="dark"] .feature-content {
+  background: #1a1a1a;
+}
+
+:root[data-theme="dark"] .feature-content h2 {
+  color: #e0e0e0;
+}
+
+:root[data-theme="dark"] .feature-content p {
+  color: #b0b0b0;
+}
+
+:root[data-theme="dark"] .feature-content li {
   color: #b0b0b0;
 }
 
